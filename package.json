@@ -1,0 +1,27 @@
+{
+  "name": "demo-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.demoApp.demoApp",
+    "productName": "DemoApp",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "your-github-username",
+        "repo": "your-repo-name"
+      }
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron-log": "^5.1.7",
+    "electron-updater": "^6.2.1"
+  }
+}
